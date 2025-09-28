@@ -5,7 +5,7 @@ GeoNewbiePinger is a cross-platform mobile application that combines **Augmented
 
 ---
 
-## 🌍 About the Project  
+##  About the Project  
 Traditional geolocation apps rely on 2D maps and text-based navigation, which often lack interactivity and immersion. **GeoNewbiePinger** was developed to bridge this gap by introducing **Augmented Reality–powered navigation and discovery tools**.  
 
 With GeoNewbiePinger, users don’t just see a pin on a map—they experience **interactive AR markers**, **real-time spatial tracking**, and **context-aware notifications** that make geographic exploration more engaging.  
@@ -21,7 +21,7 @@ In short, GeoNewbiePinger isn’t just a navigation app—it’s a step toward *
 
 ---
 
-## 🚀 Features  
+##  Features  
 - **Cross-Platform Support**: Runs on both **Android** (ARCore) and **iOS** (ARKit).  
 - **Real-Time Geolocation Tracking**: Updates location with latency under **200 ms**.  
 - **AR Markers**: Displays dynamic points of interest (POIs) in Augmented Reality.  
@@ -32,7 +32,7 @@ In short, GeoNewbiePinger isn’t just a navigation app—it’s a step toward *
 
 ---
 
-## 🛠️ Tech Stack  
+##  Tech Stack  
 - **AR Frameworks**: [ARCore](https://developers.google.com/ar) (Android), [ARKit](https://developer.apple.com/augmented-reality/) (iOS)  
 - **Frameworks & Tools**: Native Android (Kotlin/Java), iOS (Swift), optional Unity layer for cross-AR abstraction  
 - **Backend (Optional)**: REST/GraphQL APIs for geographic datasets  
@@ -40,28 +40,8 @@ In short, GeoNewbiePinger isn’t just a navigation app—it’s a step toward *
 
 ---
 
-## 📊 System Architecture  
 
-```mermaid
-flowchart TD
-
-subgraph UserDevice[Mobile Device]
-    GPS[📡 GPS & Sensors] --> GeoTracker[Geolocation Tracker]
-    Camera[📷 Camera] --> ARCoreARKit[ARCore/ARKit]
-    GeoTracker --> ARRenderer[AR Renderer]
-    ARCoreARKit --> ARRenderer
-    ARRenderer --> UI[📱 Interactive UI]
-    GeoTracker --> Notifications[🔔 Proximity Notifications]
-end
-
-subgraph Backend[(Optional Backend Services)]
-    Dataset[🌍 Geographic Dataset / APIs] --> GeoTracker
-end
-
-UI --> User[👤 User]
-Notifications --> User
-
-🔎 How It Works
+How It Works
 
 GPS & Sensors track the user’s real-time location.
 
@@ -103,7 +83,7 @@ Ensure ARKit and CoreLocation frameworks are linked.
 
 Build & run on a supported iPhone/iPad.
 
-🎮 Usage
+ Usage
 
 Launch the app and allow location & camera permissions.
 
@@ -113,7 +93,7 @@ Receive notifications as you approach specific points of interest.
 
 Explore, navigate, and interact with immersive geolocation content.
 
-🔮 Roadmap
+ Roadmap
 Offline geolocation and AR dataset caching
 Social features (share AR markers, collaborative maps)
 Advanced AR visualizations (3D models, path overlays)
@@ -127,7 +107,7 @@ Optimized AR rendering for smooth UX
 
 Tested on 100+ devices with positive user feedback
 
-🤝 Contributing
+## Contributing
 
 Contributions are welcome!
 
